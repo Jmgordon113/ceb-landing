@@ -60,7 +60,7 @@ Two-column desktop (55/45), stacked mobile (text first).
 Left column:
 - Eyebrow (green-700, 13px, uppercase, letterspaced, weight 600): "A GEARED FOR GREEN COMPANY"
 - H1 (Bricolage 700, clamp 40px→64px, ink): "A recycling program in a box."
-- Sub (18-20px, ink-soft, max 46ch): "Fill it with bottles, cans, or paper. Ship it free with FedEx. Track every pound and earn rewards for recycling right."
+- Sub (18-20px, ink-soft, max 46ch): "Fill it with bottles, cans, paper, and more. Ship it free with FedEx. Track every pound and earn rewards for recycling right. Have a different material? We will build a stream for it."
 - Buttons row: primary "Get Your Box — from $99" → #pricing; secondary "For Brands & Organizations" → #brands
 - Trust chips row (3 chips, green-100 bg, green-900 text, radius-pill, 13px, icon dot before each): "Prepaid FedEx label included" / "Live impact dashboard" / "Points on every shipment"
 Right column: `photo-bottle-drop.png` in rounded card. Behind it, a subtle oversized circle outline in kraft-deep (echo of the logo's circular arrow) as decoration. On the card, bottom-left overlay chip (white bg, small): "Real box. Real recycling."
@@ -82,7 +82,7 @@ Section header centered: eyebrow "HOW IT WORKS"; H2 (Bricolage 700, 32→44px): 
 Header: eyebrow "WHAT GOES IN"; H2: "Clear streams. Clean recycling."
 Sub center (16px ink-soft): "Every box collects one clean material stream, marked with its own sticker. That keeps recycling honest and the material valuable."
 Three columns (cards, kraft tint bg #F5EEDF, radius-lg):
-- Card 1 H3 "Accepted today" + checklist (green check marks): Plastic bottles & containers / Aluminum cans / Paper & cardboard
+- Card 1 H3 "Accepted today" + checklist (green check marks): Plastic bottles & containers / Aluminum cans / Paper & cardboard / Other recyclables? Just ask, we can take on more
 - Card 2 H3 "Custom streams" + text: "Running a special program? We build boxes for dedicated streams:" + checklist: Vinyl records / Event & venue waste / Textiles & more by request. Small green chip: "New: vinyl records"
 - Card 3 H3 "Keep it out" + x-marks list (ink-soft): Food waste & liquids / Glass / Batteries & electronics / Hazardous or medical waste
 Footnote line under grid (13px, ink-soft, centered): "Not sure about an item? Check the FAQ or ask us before you ship."
