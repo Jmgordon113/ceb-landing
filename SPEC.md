@@ -105,7 +105,24 @@ Right visual: a stylized reward ticket stack (3 stacked cards, white bg, kraft b
 ### 9. DASHBOARD / FOR ORGANIZATIONS PROOF (white bg)
 Header: eyebrow "TRACK EVERYTHING"; H2: "Impact you can put in a report."
 Sub: "Every box is tracked. Your dashboard turns shipments into the numbers your team, your members, and your ESG report actually need."
-Dashboard mock built in HTML/CSS (NOT an image): a rounded panel (green-950 bg, radius-lg, padding 32px) titled "2024 Season — Padel X Miami" with 4 stat tiles (white/10% bg, white text): "25,519 plastic bottles recycled" / "12,161 aluminum cans recycled" / "1,258 lbs diverted from landfill" / "3.2 tons CO2 emissions reduced". Under tiles, caption line (green-100, 13px): "Real numbers from a real Circular Express Box client program."
+Dashboard mock built in pure HTML/CSS (NOT an image, NO chart libraries). It must read as a screenshot-quality mockup of the actual member dashboard app, framed as a browser window:
+
+**Window frame** (class dash-window): white bg, radius-lg, shadow-card, 1px border kraft-deep, max-width 980px centered. Top chrome bar (light gray #F1EEE8 bg, radius-lg top corners): three 10px dots (#E57373, #F5C36B, #7BC47F) left, then centered URL pill (white bg, 12px, ink-soft): "dashboard.circularexpressbox.com".
+
+**Inside the window** (padding 28px, cream bg #FAF6EF):
+1. Header row (flex, space-between, wrap): left = H3 "Padel X Miami" (Bricolage 600, 20px) + small line under it (13px ink-soft): "2024 season · 41 boxes shipped". Right = green-100 pill chip (green-900 text, 600 weight): "4,250 pts available".
+2. KPI row: 4 tiles (grid 4 → 2×2 mobile; white bg, radius-md, 1px border #E8E3D9, padding 16px). Each: big number (Bricolage 700, 24px, green-700) over label (12px, ink-soft, uppercase, letterspaced):
+   - "1,258 lbs" / "DIVERTED FROM LANDFILL"
+   - "25,519" / "PLASTIC BOTTLES"
+   - "12,161" / "ALUMINUM CANS"
+   - "3.2 tons" / "CO2e AVOIDED"
+3. Chart card (white bg, radius-md, border, padding 20px, margin-top 16px): title row = "Monthly lbs diverted" (14px, 600) left + legend dot green-700 with "2024" (12px ink-soft) right. Below: CSS bar chart — flex row, align-items flex-end, height 120px, gap 10px; 8 bars (div with green-700 bg, radius 6px 6px 0 0, flex 1) with heights 34% 46% 58% 52% 70% 64% 86% 100%; the last bar uses green-600 with a small value tag above it (11px, 600, green-700): "212 lbs". Under bars: month labels row (11px, ink-soft, one per bar): Jan Feb Mar Apr May Jun Jul Aug.
+4. Shipments card (white bg, radius-md, border, padding 20px, margin-top 16px): title "Recent shipments" (14px, 600). Table-like rows (3 rows, 13px, each a flex row with 12px gap, py 10px, bottom border #F0EDE5 except last): columns = date (ink-soft, ~64px) / box id (600) / material / weight (ink-soft) / status chip right-aligned. Rows:
+   - "Aug 2" / "Box PX-041" / "Plastic" / "34 lbs" / chip green-100 bg green-900 text: "Received"
+   - "Jul 26" / "Box PX-040" / "Aluminum" / "29 lbs" / chip green-100: "Received"
+   - "Jul 19" / "Box PX-039" / "Plastic" / "31 lbs" / chip amber (#FBF3DC bg, #8A6D1F text): "In transit · FedEx"
+   Mobile (<640px): hide the material column; keep date, box id, weight, status.
+Under the window, caption line (13px, ink-soft, centered, margin-top 16px): "Illustrative dashboard view. Season totals are real numbers from a Circular Express Box client program."
 
 ### 10. PRICING (kraft tint bg #F5EEDF) — id="pricing"
 Header: eyebrow "GET STARTED"; H2: "Pick your box. Everything is included."
