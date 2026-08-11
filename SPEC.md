@@ -112,7 +112,9 @@ Tabbed browser-window frame (existing dash-window + dash-chrome stay EXACTLY as 
 
 HONESTY RULE: these are PERSONA dashboards with representative numbers (Jake-approved), using ONLY real CEB photos. Never label them as audited client reports. Do not reference Informa or Tortuga anywhere.
 
-**PANE 1 — dash-pane-cleanup (Miami Waterkeeper persona), styled as a FULL REPORT INFOGRAPHIC modeled on our festival report template. Palette: navy #003155, royal #184188, gold #E6B737, light-blue pane bg #DDEBF7, white cards. Pane padding 20px. All type: headings Bricolage, labels Inter 600 uppercase 10-11px letterspaced.**
+**PANE 1 — dash-pane-cleanup: now a real Canva-produced report image, assets/dashboard-cleanup.png (Canva design DAHSAgvpsuM: the team's report template duplicated in Canva, Tortuga/RTO branding stripped, refilled for CEB + Miami Waterkeeper with real cleanup photos and the 307-lb numbers). Rendered inside .dash-body-real within the window chrome. The HTML infographic spec below is RETIRED (superseded by the image; CSS classes may remain unused):**
+
+**RETIRED SPEC — PANE 1 (Miami Waterkeeper persona), styled as a FULL REPORT INFOGRAPHIC modeled on our festival report template. Palette: navy #003155, royal #184188, gold #E6B737, light-blue pane bg #DDEBF7, white cards. Pane padding 20px. All type: headings Bricolage, labels Inter 600 uppercase 10-11px letterspaced.**
 1. Header band (navy #003155, radius-md, padding 14px 18px, flex align-center gap 14px): assets/ceb-logo.png at 44px (alt "Circular Express Box logo"), then title (white, Bricolage 700, 18px, uppercase, line-height 1.2): "Full Season Recycling & Sustainability Report 2026"
 2. Row A (grid: 42% info / 58% photos, gap 12px, margin-top 12px; stacks under 700px):
    - Left = 2x2 grid (gap 10px) of royal #184188 cards (radius-md, padding 12px 14px, white text; label 10px uppercase rgba(255,255,255,0.8); value line below):
