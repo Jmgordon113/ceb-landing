@@ -145,3 +145,24 @@
     });
   }
 })();
+
+/* Dashboard example tabs */
+(function () {
+  "use strict";
+  var tabs = document.querySelectorAll(".dash-tab");
+  if (!tabs.length) return;
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      tabs.forEach(function (t) {
+        t.classList.remove("is-active");
+        t.setAttribute("aria-selected", "false");
+        var pane = document.getElementById(t.getAttribute("aria-controls"));
+        if (pane) pane.hidden = true;
+      });
+      tab.classList.add("is-active");
+      tab.setAttribute("aria-selected", "true");
+      var activePane = document.getElementById(tab.getAttribute("aria-controls"));
+      if (activePane) activePane.hidden = false;
+    });
+  });
+})();
