@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circular Express Box | Recycling Program in a Box</title>
+  <meta name="description" content="Fill it with bottles, cans, or paper. Ship it free with FedEx. Track every pound and earn rewards for recycling right.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- 1. Announcement bar -->
+  <div class="announcement-bar" role="region" aria-label="Announcement">
+    Now accepting vinyl records • Nationwide shipping via FedEx
+  </div>
+
+  <!-- 2. Sticky nav -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="index.html" class="nav-brand" aria-label="Circular Express Box home">
+        <img src="assets/ceb-logo.png" alt="Circular Express Box logo" width="48" height="48" class="nav-logo">
+        <span class="nav-wordmark">CIRCULAR EXPRESS BOX</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#materials">What Goes In</a></li>
+        <li><a href="#rewards">Rewards</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#brands">For Brands</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://circularexpressbox.com" class="nav-login">Log In</a>
+        <a href="#pricing" class="btn btn-primary btn-nav">Get Your Box</a>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <div class="mobile-menu-inner">
+        <button type="button" class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">&times;</button>
+        <ul class="mobile-menu-links">
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#materials">What Goes In</a></li>
+          <li><a href="#rewards">Rewards</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#brands">For Brands</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="https://circularexpressbox.com">Log In</a></li>
+          <li><a href="#pricing" class="btn btn-primary">Get Your Box</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 3. HERO -->
+    <section class="hero section-cream" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">A GEARED FOR GREEN COMPANY</p>
+          <h1 id="hero-heading">A recycling program in a box.</h1>
+          <p class="hero-sub">Fill it with bottles, cans, or paper. Ship it free with FedEx. Track every pound and earn rewards for recycling right.</p>
+          <div class="hero-buttons">
+            <a href="#pricing" class="btn btn-primary">Get Your Box - from $99</a>
+            <a href="#brands" class="btn btn-secondary">For Brands &amp; Organizations</a>
+          </div>
+          <div class="trust-chips">
+            <span class="trust-chip"><span class="chip-dot" aria-hidden="true"></span>Prepaid FedEx label included</span>
+            <span class="trust-chip"><span class="chip-dot" aria-hidden="true"></span>Live impact dashboard</span>
+            <span class="trust-chip"><span class="chip-dot" aria-hidden="true"></span>Points on every shipment</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-circle" aria-hidden="true"></div>
+          <div class="photo-card">
+            <img
+              src="assets/photo-bottle-drop.png"
+              alt="Dropping a plastic bottle into a Circular Express Box"
+              width="1920"
+              height="1080"
+              class="photo-card-img"
+            >
+            <span class="photo-overlay-chip">Real box. Real recycling.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Trusted-by strip -->
+    <section class="trusted-by section-white" aria-label="Trusted by">
+      <div class="container">
+        <p class="trusted-label">TRUSTED BY TEAMS AND COMMUNITIES</p>
+        <div class="trusted-badges">
+          <span>Miami Waterkeeper</span>
+          <span class="trusted-sep" aria-hidden="true">·</span>
+          <span>Plastics Industry Association</span>
+          <span class="trusted-sep" aria-hidden="true">·</span>
+          <span>Padel X Miami</span>
+          <span class="trusted-sep" aria-hidden="true">·</span>
+          <span>The Content Gym</span>
+          <span class="trusted-sep" aria-hidden="true">·</span>
+          <span>Coffee and Chill</span>
+        </div>
+        <p class="trusted-note">Backed by Geared for GREEN: 40+ years in circular economy, 1.7B+ lbs recycled.</p>
+      </div>
+    </section>
+
+    <!-- 5. HOW IT WORKS -->
+    <section class="how-it-works section-cream" id="how-it-works" aria-labelledby="how-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">HOW IT WORKS</p>
+          <h2 id="how-heading">If you can ship a return, you can run a recycling program.</h2>
+        </header>
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span class="step-number" aria-hidden="true">1</span>
+            <h3>Get your box</h3>
+            <p>Order online and your Circular Express Box arrives flat at your door, ready to set up in about a minute.</p>
+            <span class="badge-chip">Ships to your door</span>
+          </article>
+          <article class="step-card reveal">
+            <span class="step-number" aria-hidden="true">2</span>
+            <h3>Fill it up</h3>
+            <p>Toss in accepted recyclables as you go. Material stickers keep streams clean, so there is no sorting stress.</p>
+            <span class="badge-chip">No sorting stress</span>
+          </article>
+          <article class="step-card reveal">
+            <span class="step-number" aria-hidden="true">3</span>
+            <h3>Ship it free</h3>
+            <p>Log in, print your prepaid FedEx label, and drop the sealed box at any FedEx location, or hand it to your regular driver.</p>
+            <span class="badge-chip">Prepaid FedEx label</span>
+          </article>
+          <article class="step-card reveal">
+            <span class="step-number" aria-hidden="true">4</span>
+            <h3>Earn and track</h3>
+            <p>Points land in your account and your dashboard shows the pounds you have diverted from landfill.</p>
+            <span class="badge-chip">Rewards + live impact</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. WHAT GOES IN -->
+    <section class="materials section-white" id="materials" aria-labelledby="materials-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">WHAT GOES IN</p>
+          <h2 id="materials-heading">Clear streams. Clean recycling.</h2>
+          <p class="section-sub">Every box collects one clean material stream, marked with its own sticker. That keeps recycling honest and the material valuable.</p>
+        </header>
+        <div class="materials-grid">
+          <article class="material-card reveal">
+            <h3>Accepted today</h3>
+            <ul class="check-list">
+              <li>Plastic bottles &amp; containers</li>
+              <li>Aluminum cans</li>
+              <li>Paper &amp; cardboard</li>
+            </ul>
+          </article>
+          <article class="material-card reveal">
+            <h3>Custom streams</h3>
+            <p class="material-intro">Running a special program? We build boxes for dedicated streams:</p>
+            <ul class="check-list">
+              <li>Vinyl records</li>
+              <li>Event &amp; venue waste</li>
+              <li>Textiles &amp; more by request</li>
+            </ul>
+            <span class="badge-chip badge-chip-green">New: vinyl records</span>
+          </article>
+          <article class="material-card reveal">
+            <h3>Keep it out</h3>
+            <ul class="x-list">
+              <li>Food waste &amp; liquids</li>
+              <li>Glass</li>
+              <li>Batteries &amp; electronics</li>
+              <li>Hazardous or medical waste</li>
+            </ul>
+          </article>
+        </div>
+        <p class="materials-footnote">Not sure about an item? Check the FAQ or ask us before you ship.</p>
+      </div>
+    </section>
+
+    <!-- 7. WHERE IT GOES / CLOSED LOOP -->
+    <section class="impact section-green-dark" id="impact" aria-labelledby="impact-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow eyebrow-light">WHERE IT GOES</p>
+          <h2 id="impact-heading" class="text-white">Watch your recycling become the good stuff.</h2>
+        </header>
+        <div class="journey-row reveal" aria-label="Recycling journey">
+          <div class="journey-node">
+            <span class="journey-dot" aria-hidden="true"></span>
+            <span class="journey-label">Your box</span>
+          </div>
+          <span class="journey-arrow" aria-hidden="true"></span>
+          <div class="journey-node">
+            <span class="journey-dot" aria-hidden="true"></span>
+            <span class="journey-label">Regional recycling hub</span>
+          </div>
+          <span class="journey-arrow" aria-hidden="true"></span>
+          <div class="journey-node">
+            <span class="journey-dot" aria-hidden="true"></span>
+            <span class="journey-label">Sustainable raw material</span>
+          </div>
+          <span class="journey-arrow" aria-hidden="true"></span>
+          <div class="journey-node">
+            <span class="journey-dot" aria-hidden="true"></span>
+            <span class="journey-label">New products</span>
+          </div>
+        </div>
+        <div class="highlight-card reveal">
+          <h3>6 bottles = 1 hat.</h3>
+          <p>Materials from Circular Express Boxes are processed and remade into real products, like Champions for GREEN hats made from 6 recycled bottles each, with the count stamped on every piece. That is the loop, closed.</p>
+        </div>
+        <div class="stat-row reveal">
+          <div class="stat-item">
+            <p class="stat-number">1.7B+</p>
+            <p class="stat-desc">lbs recycled by our family of companies</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number">950M+</p>
+            <p class="stat-desc">lbs reintegrated into new products</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number">Since 1985</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. REWARDS -->
+    <section class="rewards section-cream" id="rewards" aria-labelledby="rewards-heading">
+      <div class="container rewards-grid">
+        <div class="rewards-content reveal">
+          <p class="eyebrow">REWARDS</p>
+          <h2 id="rewards-heading">Recycle to get the rewards.</h2>
+          <p class="body-copy">Every shipment earns points. Points unlock real discounts on sustainable gear made from the same kinds of materials you ship. No gimmicks, no expiring coupons maze, just recycling that pays you back.</p>
+          <ul class="check-list">
+            <li>Points credited when your box is received</li>
+            <li>Redeem for eco apparel and gear discounts</li>
+            <li>Teams can pool rewards to reward staff, members, or volunteers</li>
+          </ul>
+        </div>
+        <div class="rewards-visual reveal" aria-label="Example rewards">
+          <div class="ticket-stack">
+            <div class="ticket-card ticket-card-1">400 pts - 20% off the 6-Bottle GREEN Hat</div>
+            <div class="ticket-card ticket-card-2">350 pts - $10 off the Peaks Polo</div>
+            <div class="ticket-card ticket-card-3">250 pts - 15% off the Performance Long Sleeve</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. DASHBOARD / FOR ORGANIZATIONS PROOF -->
+    <section class="dashboard section-white" aria-labelledby="dashboard-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">TRACK EVERYTHING</p>
+          <h2 id="dashboard-heading">Impact you can put in a report.</h2>
+          <p class="section-sub">Every box is tracked. Your dashboard turns shipments into the numbers your team, your members, and your ESG report actually need.</p>
+        </header>
+        <div class="dashboard-panel reveal">
+          <h3 class="dashboard-title">2024 Season - Padel X Miami</h3>
+          <div class="dashboard-tiles">
+            <div class="dashboard-tile">
+              <p class="dashboard-stat">25,519 plastic bottles recycled</p>
+            </div>
+            <div class="dashboard-tile">
+              <p class="dashboard-stat">12,161 aluminum cans recycled</p>
+            </div>
+            <div class="dashboard-tile">
+              <p class="dashboard-stat">1,258 lbs diverted from landfill</p>
+            </div>
+            <div class="dashboard-tile">
+              <p class="dashboard-stat">3.2 tons CO2 emissions reduced</p>
+            </div>
+          </div>
+          <p class="dashboard-caption">Real numbers from a real Circular Express Box client program.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. PRICING -->
+    <section class="pricing section-kraft" id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">GET STARTED</p>
+          <h2 id="pricing-heading">Pick your box. Everything is included.</h2>
+          <p class="section-sub">Every option includes the box, liners, a prepaid FedEx shipping label per box, dashboard access, and rewards.</p>
+        </header>
+        <div class="pricing-grid">
+          <article class="pricing-card reveal">
+            <h3>Single Box</h3>
+            <p class="pricing-price">$99</p>
+            <p class="pricing-desc">Ideal for trial runs and small offices.</p>
+            <ul class="pricing-list">
+              <li>1 Circular Express Box</li>
+              <li>1 prepaid FedEx label</li>
+              <li>Dashboard + rewards access</li>
+            </ul>
+            <a href="https://circularexpressbox.com/product/single-box/" class="btn btn-secondary">Get a Single Box</a>
+          </article>
+          <article class="pricing-card pricing-card-featured reveal">
+            <span class="popular-chip">MOST POPULAR</span>
+            <h3>3-Box Pack</h3>
+            <p class="pricing-price">$269</p>
+            <p class="pricing-save">Save $28 vs single boxes</p>
+            <p class="pricing-desc">Great for gyms, studios, retail, and events.</p>
+            <ul class="pricing-list">
+              <li>3 Circular Express Boxes</li>
+              <li>3 prepaid FedEx labels</li>
+              <li>Dashboard + rewards access</li>
+            </ul>
+            <a href="https://circularexpressbox.com/product/three-boxes/" class="btn btn-primary">Get the 3-Pack</a>
+          </article>
+          <article class="pricing-card reveal">
+            <h3>10-Box Pack</h3>
+            <p class="pricing-price">$749</p>
+            <p class="pricing-save">Save $241 vs single boxes</p>
+            <p class="pricing-desc">Built for campuses, venues, and multi-room deployments.</p>
+            <ul class="pricing-list">
+              <li>10 Circular Express Boxes</li>
+              <li>10 prepaid FedEx labels</li>
+              <li>Dashboard + rewards access</li>
+            </ul>
+            <a href="https://circularexpressbox.com/product/ten-boxes/" class="btn btn-secondary">Get the 10-Pack</a>
+          </article>
+        </div>
+        <p class="pricing-footnote">Need more than 10 boxes or a custom program? Talk to us about volume pricing.</p>
+      </div>
+    </section>
+
+    <!-- 11. FOR BRANDS & ORGANIZATIONS -->
+    <section class="brands section-green-dark" id="brands" aria-labelledby="brands-heading">
+      <div class="container brands-grid">
+        <div class="brands-visual reveal">
+          <div class="photo-card">
+            <img
+              src="assets/photo-vinyl-drop.png"
+              alt="Dropping a vinyl record into a Circular Express Box"
+              width="1440"
+              height="810"
+              class="photo-card-img"
+              loading="lazy"
+            >
+          </div>
+        </div>
+        <div class="brands-content reveal">
+          <p class="eyebrow eyebrow-light">FOR BRANDS &amp; ORGANIZATIONS</p>
+          <h2 id="brands-heading" class="text-white">Launch a branded take-back program.</h2>
+          <p class="brands-body">Every Circular Express Box carries a sponsor panel and a dedicated material sticker. That means your brand can run a national take-back program without building any infrastructure: put co-branded boxes anywhere FedEx ships, and we handle collection, processing, and the impact report.</p>
+          <ul class="check-list check-list-light">
+            <li>Co-branded boxes with your logo on the sponsor panel</li>
+            <li>Custom material streams, from vinyl records to event waste</li>
+            <li>Nationwide collection through FedEx</li>
+            <li>Campaign-level impact reporting for ESG and PR</li>
+          </ul>
+          <p class="brands-quote">Currently piloting record take-back with the music industry.</p>
+          <a href="mailto:jeff@gearedforgreen.com?subject=Circular%20Express%20Box%20Brand%20Program" class="btn btn-inverted">Build your program</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. TESTIMONIALS -->
+    <section class="testimonials section-cream" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">WHAT PEOPLE SAY</p>
+          <h2 id="testimonials-heading">Loved by the people doing the work.</h2>
+        </header>
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote>
+              <p>The Circular Express Box made our cleanups easier, more efficient, and far more impactful. Our volunteers loved the simplicity, and the tracking dashboard helped us clearly show how much waste we diverted.</p>
+            </blockquote>
+            <footer>
+              <cite class="testimonial-name">Erin Cover</cite>
+              <span class="testimonial-org">Miami Waterkeepers</span>
+            </footer>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote>
+              <p>Collecting the materials and shipping them to the recycling mill is extremely easy, and I can not wait to start offering my clients apparel made from recycled water bottles.</p>
+            </blockquote>
+            <footer>
+              <cite class="testimonial-name">Owner</cite>
+              <span class="testimonial-org">The Content Gym</span>
+            </footer>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote>
+              <p>The Circular Express Box takes away the complexity and confusion. Now I can easily recycle without the stress, and the rewards are a great incentive to keep going.</p>
+            </blockquote>
+            <footer>
+              <cite class="testimonial-name">Lucy Nelles</cite>
+              <span class="testimonial-org">Coffee and Chill</span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. FAQ -->
+    <section class="faq section-white" id="faq" aria-labelledby="faq-heading">
+      <div class="container container-narrow">
+        <header class="section-header reveal">
+          <h2 id="faq-heading">Questions, answered.</h2>
+        </header>
+        <div class="faq-list" role="list">
+          <div class="faq-item reveal" role="listitem">
+            <button type="button" class="faq-question" aria-expanded="false" id="faq-q1" aria-controls="faq-a1">
+              <span>How does shipping work?</span>
+              <span class="faq-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1" hidden>
+              <p>Every box comes with a prepaid FedEx shipping label. When your box is full, seal it, print your label from your account, and drop it at any FedEx location or hand it to your regular FedEx driver.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal" role="listitem">
+            <button type="button" class="faq-question" aria-expanded="false" id="faq-q2" aria-controls="faq-a2">
+              <span>What can I put in the box?</span>
+              <span class="faq-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2" hidden>
+              <p>Standard boxes collect one clean stream: plastic bottles and containers, aluminum cans, or paper and cardboard. Custom streams like vinyl records are available for partner programs. No food waste, liquids, glass, batteries, or hazardous materials.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal" role="listitem">
+            <button type="button" class="faq-question" aria-expanded="false" id="faq-q3" aria-controls="faq-a3">
+              <span>Where does my recycling actually go?</span>
+              <span class="faq-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3" hidden>
+              <p>Boxes ship to regional recycling hubs where materials are sorted and processed into sustainable raw materials, then remade into real products like recycled-fabric apparel. Your dashboard tracks every shipment.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal" role="listitem">
+            <button type="button" class="faq-question" aria-expanded="false" id="faq-q4" aria-controls="faq-a4">
+              <span>How do rewards work?</span>
+              <span class="faq-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4" hidden>
+              <p>Each received shipment earns points in your account. Redeem points for discounts on sustainable products from our family of brands.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal" role="listitem">
+            <button type="button" class="faq-question" aria-expanded="false" id="faq-q5" aria-controls="faq-a5">
+              <span>Can my company or organization use this?</span>
+              <span class="faq-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5" hidden>
+              <p>Yes. Gyms, offices, campuses, events, and community groups run Circular Express Box programs today. For co-branded boxes and custom material streams, see For Brands &amp; Organizations above.</p>
+            </div>
+          </div>
+          <div class="faq-item reveal" role="listitem">
+            <button type="button" class="faq-question" aria-expanded="false" id="faq-q6" aria-controls="faq-a6">
+              <span>How big is the box?</span>
+              <span class="faq-chevron" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-a6" role="region" aria-labelledby="faq-q6" hidden>
+              <p>The standard Circular Express Box is a heavy-duty, tamper-friendly collection box sized for high-traffic spots like lobbies, gyms, and cafes, and it ships flat with liners included.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. FINAL CTA -->
+    <section class="final-cta" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="final-cta-inner reveal">
+          <h2 id="cta-heading">Your recycling deserves a better ending.</h2>
+          <p class="final-cta-sub">Get a box, fill it up, and watch it come back as something new.</p>
+          <div class="final-cta-buttons">
+            <a href="#pricing" class="btn btn-inverted">Get Your Box</a>
+            <a href="mailto:jeff@gearedforgreen.com" class="btn btn-ghost">Talk to us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 15. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <img src="assets/ceb-logo.png" alt="Circular Express Box logo" width="64" height="64" class="footer-logo" loading="lazy">
+        <p>Circular Express Box turns everyday recyclables into tracked, rewarded, closed-loop recycling. A Geared for GREEN company.</p>
+        <a href="https://www.gearedforgreen.com" target="_blank" rel="noopener noreferrer">gearedforgreen.com</a>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Explore</h3>
+        <ul class="footer-links">
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#materials">What Goes In</a></li>
+          <li><a href="#rewards">Rewards</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#brands">For Brands</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Contact</h3>
+        <ul class="footer-links">
+          <li><a href="mailto:jeff@gearedforgreen.com">Jeff Feldman, COO - jeff@gearedforgreen.com</a></li>
+          <li><a href="mailto:jakeg@gearedforgreen.com">Jake Gordon, Client Services - jakeg@gearedforgreen.com</a></li>
+          <li><a href="https://circularexpressbox.com">Log in to your account</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Circular Express Box. A Geared for GREEN company. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
