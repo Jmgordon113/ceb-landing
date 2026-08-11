@@ -112,18 +112,25 @@ Tabbed browser-window frame (existing dash-window + dash-chrome stay EXACTLY as 
 
 HONESTY RULE: these are PERSONA dashboards with representative numbers (Jake-approved), using ONLY real CEB photos. Never label them as audited client reports. Do not reference Informa or Tortuga anywhere.
 
-**PANE 1 — dash-pane-cleanup (Miami Waterkeeper persona). Palette: navy #003155, royal #184188, gold #E6B737, light #F4F5FA. Pane bg light (#F4F5FA), padding 24px.**
-1. Header row (flex space-between wrap, gap 12px): left = H3 "Beach Cleanup Program" (Bricolage 600, 20px, #003155) + line under (13px, #47554C): "Miami Waterkeeper · 2026 season". Right = gold pill (bg #E6B737, #003155 text, 600, 13px, radius-pill, padding 8px 16px): "9 cleanups · 14 boxes shipped"
-2. KPI row: 4 tiles (grid 4 → 2×2 under 640px; bg #003155, white text, radius-md, padding 16px; value Bricolage 700 22px; label 11px uppercase letterspaced rgba(255,255,255,0.75)):
-   - "307 lbs" / "TOTAL DIVERTED FROM LANDFILL"
-   - "5,847" / "PLASTIC BOTTLES COLLECTED"
-   - "3,192" / "ALUMINUM CANS COLLECTED"
-   - "0.78 tons" / "CO2e AVOIDED"
-3. Photo strip (margin-top 16px): 3 images side by side (grid 3, gap 12px; radius-md; aspect-ratio 4/5; object-fit cover; width/height attrs 640x800; loading lazy):
-   - assets/cleanup-can-drop.jpg alt "Volunteer dropping aluminum cans into a Circular Express Box at a beach cleanup"
-   - assets/cleanup-volunteer.jpg alt "Cleanup volunteer collecting bottles and cans next to a Circular Express Box on the Miami waterfront"
-   - assets/cleanup-group.jpg alt "Volunteer group with filled bags and a Circular Express Box after a shoreline cleanup"
-4. Bottom line (13px, #47554C, margin-top 14px): "Every item collected ships back in a Circular Express Box with its prepaid FedEx label and is tracked to the pound."
+**PANE 1 — dash-pane-cleanup (Miami Waterkeeper persona), styled as a FULL REPORT INFOGRAPHIC modeled on our festival report template. Palette: navy #003155, royal #184188, gold #E6B737, light-blue pane bg #DDEBF7, white cards. Pane padding 20px. All type: headings Bricolage, labels Inter 600 uppercase 10-11px letterspaced.**
+1. Header band (navy #003155, radius-md, padding 14px 18px, flex align-center gap 14px): assets/ceb-logo.png at 44px (alt "Circular Express Box logo"), then title (white, Bricolage 700, 18px, uppercase, line-height 1.2): "Full Season Recycling & Sustainability Report 2026"
+2. Row A (grid: 42% info / 58% photos, gap 12px, margin-top 12px; stacks under 700px):
+   - Left = 2x2 grid (gap 10px) of royal #184188 cards (radius-md, padding 12px 14px, white text; label 10px uppercase rgba(255,255,255,0.8); value line below):
+     a. label "EVENT NAME:" + white oval chip (bg white, navy text, Bricolage 700, 13px, radius-pill, padding 6px 12px, centered): "Miami Waterkeeper Beach Cleanups"
+     b. label "VOLUNTEERS:" + value (Bricolage 700, 22px, white): "480+"
+     c. label "TOTAL WASTE DIVERTED FROM LANDFILL:" + light chip (bg #DDEBF7, navy text, Bricolage 700, 16px, radius-sm, padding 4px 10px): "307 lbs."
+     d. label "CO2 EMISSIONS AVOIDED:" + light chip same style: "0.78 tons CO2e"
+   - Right = photo collage card (royal border 3px, radius-md, overflow hidden): 3 photos in a row (grid 3, no gap, each aspect 4/5, object-fit cover, width/height 640x800, loading lazy) using assets/cleanup-can-drop.jpg, assets/cleanup-volunteer.jpg, assets/cleanup-group.jpg with the same alt texts as before.
+3. Row B (grid: 40% stats / 60% products, gap 12px, margin-top 12px; stacks under 700px):
+   - Left: heading (navy, Bricolage 700, 15px): "Stats from the 2026 Cleanup Season" then 3 stacked white cards (radius-md, padding 10px 14px, flex space-between align-center): material name (navy, 600, 14px) + count (Bricolage 700, 18px, royal) + lbs chip (bg #DDEBF7, navy, 12px, 600, radius-pill, padding 3px 10px):
+     "Plastic Bottles" / "5,847" / "205 lbs."
+     "Aluminum Cans" / "3,192" / "96 lbs."
+     "Plastic Film & Caps" / "—" / "6 lbs."
+   - Right: heading (navy, 600, 13px): "These recyclables will help make the following products:" then 3 columns (grid 3, gap 10px) of navy cards (radius-md, padding 14px, centered white text): product name (Bricolage 600, 14px), conversion line (11px, rgba(255,255,255,0.8)), gold number chip at bottom (bg #E6B737, navy text, Bricolage 700, 15px, radius-sm, padding 4px 10px):
+     "Shirts" / "10 bottles make 1 shirt" / "584"
+     "Hats" / "6 bottles make 1 hat" / "974"
+     "Towels" / "2 bottles make 1 towel" / "2,923"
+4. Footer row (flex space-between, margin-top 12px, wrap): left (12px, #47554C): "Every item ships back in a Circular Express Box with its prepaid FedEx label." right (12px, navy, 700): "powered by circularexpressbox.com"
 
 **PANE 2 — dash-pane-gym (facility persona, hidden by default). CEB palette. Pane bg cream, padding 24px.**
 1. Header row: H3 "Facility Recycling Program" (green-950) + "South Florida fitness studio · Jan to Jun 2026". Right pill (green-100 bg, green-900 text): "6 boxes shipped"
