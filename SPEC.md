@@ -105,24 +105,37 @@ Right visual: a stylized reward ticket stack (3 stacked cards, white bg, kraft b
 ### 9. DASHBOARD / FOR ORGANIZATIONS PROOF (white bg)
 Header: eyebrow "TRACK EVERYTHING"; H2: "Impact you can put in a report."
 Sub: "Every box is tracked. Your dashboard turns shipments into the numbers your team, your members, and your ESG report actually need."
-Dashboard window shows TWO real sustainability dashboards in a TABBED browser-window frame (tabs: "Tortuga Music Festival" default-active, "Informa Markets"). Assets: assets/dashboard-tortuga.png (Tortuga 2026 full-show report, exported from Canva design DAHQmSMFMfY p2) and assets/dashboard-informa.png (typo-corrected "Cardboard", quantized ~250KB). IMPORTANT HONESTY RULE: Informa and Tortuga were NOT run on CEB boxes - they are Geared for GREEN family programs. Copy must present them as examples of the reporting CEB programs receive, never as CEB client dashboards. Section sub: "Every box is tracked. These are real sustainability dashboards from our Geared for GREEN family of programs, and every Circular Express Box program receives the same tracking and reporting." Caption: "Real reports produced by our team for Geared for GREEN family programs, shown as examples of the reporting every Circular Express Box program receives." Tab switcher JS in main.js (aria-selected + hidden panes). The HTML/CSS mock interior spec below is RETIRED (kept for reference; CSS classes remain in styles.css):
 
-**Window frame** (class dash-window): white bg, radius-lg, shadow-card, 1px border kraft-deep, max-width 980px centered. Top chrome bar (light gray #F1EEE8 bg, radius-lg top corners): three 10px dots (#E57373, #F5C36B, #7BC47F) left, then centered URL pill (white bg, 12px, ink-soft): "dashboard.circularexpressbox.com". Image sits in .dash-body-real (16px padding; img radius-md, 1px #E8E3D9 border).
+Tabbed browser-window frame (existing dash-window + dash-chrome stay EXACTLY as built: white window, radius-lg, shadow-card, 1px kraft-deep border, max-width 980px, chrome bar with traffic dots + URL pill "dashboard.circularexpressbox.com"). Two tabs (existing .dash-tabs/.dash-tab styles and the generic JS switcher in main.js stay):
+- Tab 1 (default active): id dash-tab-cleanup, controls dash-pane-cleanup, label "Miami Waterkeeper · Beach Cleanups"
+- Tab 2: id dash-tab-gym, controls dash-pane-gym, label "Gym & Studio Program"
 
-**Inside the window** (padding 28px, cream bg #FAF6EF):
-1. Header row (flex, space-between, wrap): left = H3 "Padel X Miami" (Bricolage 600, 20px) + small line under it (13px ink-soft): "2024 season · 41 boxes shipped". Right = green-100 pill chip (green-900 text, 600 weight): "4,250 pts available".
-2. KPI row: 4 tiles (grid 4 → 2×2 mobile; white bg, radius-md, 1px border #E8E3D9, padding 16px). Each: big number (Bricolage 700, 24px, green-700) over label (12px, ink-soft, uppercase, letterspaced):
-   - "1,258 lbs" / "DIVERTED FROM LANDFILL"
-   - "25,519" / "PLASTIC BOTTLES"
-   - "12,161" / "ALUMINUM CANS"
-   - "3.2 tons" / "CO2e AVOIDED"
-3. Chart card (white bg, radius-md, border, padding 20px, margin-top 16px): title row = "Monthly lbs diverted" (14px, 600) left + legend dot green-700 with "2024" (12px ink-soft) right. Below: CSS bar chart — flex row, align-items flex-end, height 120px, gap 10px; 8 bars (div with green-700 bg, radius 6px 6px 0 0, flex 1) with heights 34% 46% 58% 52% 70% 64% 86% 100%; the last bar uses green-600 with a small value tag above it (11px, 600, green-700): "212 lbs". Under bars: month labels row (11px, ink-soft, one per bar): Jan Feb Mar Apr May Jun Jul Aug.
-4. Shipments card (white bg, radius-md, border, padding 20px, margin-top 16px): title "Recent shipments" (14px, 600). Table-like rows (3 rows, 13px, each a flex row with 12px gap, py 10px, bottom border #F0EDE5 except last): columns = date (ink-soft, ~64px) / box id (600) / material / weight (ink-soft) / status chip right-aligned. Rows:
-   - "Aug 2" / "Box PX-041" / "Plastic" / "34 lbs" / chip green-100 bg green-900 text: "Received"
-   - "Jul 26" / "Box PX-040" / "Aluminum" / "29 lbs" / chip green-100: "Received"
-   - "Jul 19" / "Box PX-039" / "Plastic" / "31 lbs" / chip amber (#FBF3DC bg, #8A6D1F text): "In transit · FedEx"
-   Mobile (<640px): hide the material column; keep date, box id, weight, status.
-Under the window, caption line (13px, ink-soft, centered, margin-top 16px): "Illustrative dashboard view. Season totals are real numbers from a Circular Express Box client program."
+HONESTY RULE: these are PERSONA dashboards with representative numbers (Jake-approved), using ONLY real CEB photos. Never label them as audited client reports. Do not reference Informa or Tortuga anywhere.
+
+**PANE 1 — dash-pane-cleanup (Miami Waterkeeper persona). Palette: navy #003155, royal #184188, gold #E6B737, light #F4F5FA. Pane bg light (#F4F5FA), padding 24px.**
+1. Header row (flex space-between wrap, gap 12px): left = H3 "Beach Cleanup Program" (Bricolage 600, 20px, #003155) + line under (13px, #47554C): "Miami Waterkeeper · 2026 season". Right = gold pill (bg #E6B737, #003155 text, 600, 13px, radius-pill, padding 8px 16px): "9 cleanups · 14 boxes shipped"
+2. KPI row: 4 tiles (grid 4 → 2×2 under 640px; bg #003155, white text, radius-md, padding 16px; value Bricolage 700 22px; label 11px uppercase letterspaced rgba(255,255,255,0.75)):
+   - "307 lbs" / "TOTAL DIVERTED FROM LANDFILL"
+   - "5,847" / "PLASTIC BOTTLES COLLECTED"
+   - "3,192" / "ALUMINUM CANS COLLECTED"
+   - "0.78 tons" / "CO2e AVOIDED"
+3. Photo strip (margin-top 16px): 3 images side by side (grid 3, gap 12px; radius-md; aspect-ratio 4/5; object-fit cover; width/height attrs 640x800; loading lazy):
+   - assets/cleanup-can-drop.jpg alt "Volunteer dropping aluminum cans into a Circular Express Box at a beach cleanup"
+   - assets/cleanup-volunteer.jpg alt "Cleanup volunteer collecting bottles and cans next to a Circular Express Box on the Miami waterfront"
+   - assets/cleanup-group.jpg alt "Volunteer group with filled bags and a Circular Express Box after a shoreline cleanup"
+4. Bottom line (13px, #47554C, margin-top 14px): "Every item collected ships back in a Circular Express Box with its prepaid FedEx label and is tracked to the pound."
+
+**PANE 2 — dash-pane-gym (facility persona, hidden by default). CEB palette. Pane bg cream, padding 24px.**
+1. Header row: H3 "Facility Recycling Program" (green-950) + "South Florida fitness studio · Jan to Jun 2026". Right pill (green-100 bg, green-900 text): "6 boxes shipped"
+2. KPI row (4 tiles, bg green-700, white text, same tile style as pane 1):
+   - "118 lbs" / "TOTAL DIVERTED FROM LANDFILL"
+   - "2,418" / "PLASTIC BOTTLES"
+   - "1,034" / "ALUMINUM CANS"
+   - "0.3 tons" / "CO2e AVOIDED"
+3. Two-column row (grid 2, gap 12px, margin-top 16px; stack under 640px): left = photo (assets/photo-bottle-drop.png, radius-md, aspect 4/5 object-fit cover, alt "Dropping a plastic bottle into a Circular Express Box", loading lazy). Right = rewards card (kraft-tint bg #F5EEDF, radius-md, padding 20px): small uppercase label (11px, green-700, 600, letterspaced) "REWARDS EARNED"; big line (Bricolage 700, 22px, ink) "1,180 points this period"; body (14px, ink-soft) "Redeemed by staff for team gear made from recycled bottles."
+4. Bottom line (13px, ink-soft): "Members see the impact. Staff never leave the building. FedEx handles the rest."
+
+Caption under the window (13px, ink-soft, centered): "Example program dashboards. Photos are from real Circular Express Box collections and cleanups."
 
 ### 10. PRICING (kraft tint bg #F5EEDF) — id="pricing"
 Header: eyebrow "GET STARTED"; H2: "Pick your box. Everything is included."
