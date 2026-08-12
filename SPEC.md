@@ -1,6 +1,6 @@
-# CIRCULAR EXPRESS BOX — LANDING PAGE BUILD SPEC v1.0
+# CIRCULAR EXPRESS BOX — WEBSITE BUILD SPEC v1.0
 
-You are building a single static landing page for Circular Express Box (CEB), a real recycling company owned by Geared for GREEN (G4G). This page replaces a bad WordPress homepage. It must look like a premium, trustworthy, real company. It will be reviewed pixel-by-pixel by the project manager against this spec.
+You are building the Circular Express Box website: a single fast static page for Circular Express Box (CEB), a real recycling company owned by Geared for GREEN (G4G). This page replaces a bad WordPress homepage. It must look like a premium, trustworthy, real company. It will be reviewed pixel-by-pixel by the project manager against this spec.
 
 ## HARD RULES
 

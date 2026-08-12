@@ -6,7 +6,7 @@
 
 ## What this site is
 
-The site is a single-page marketing landing page for Circular Express Box, the "recycling program in a box" from Geared for GREEN. It replaces the previous WordPress homepage, which suffered from an AI-generated hero image with garbled text, an illegible logo, placeholder testimonials, typos, and a developer's name in the footer.
+This is the new Circular Express Box website: the complete story of the "recycling program in a box" from Geared for GREEN, built as one fast, continuous page. It covers everything the old multi-page WordPress site did (and more), and replaces a site that suffered from an AI-generated hero image with garbled text, an illegible logo, placeholder testimonials, typos, and a developer's name in the footer.
 The page has one job: make CEB look like the real, credible, national recycling company it is, and move two audiences to act. Consumers and small teams should click *Get Your Box*; brands and organizations (like Warner Music) should see themselves in the *For Brands* section and reach out.
 The design was built from a competitive teardown of Trashie, TerraCycle, and Ridwell. We borrowed what works (effort-anchored copy, visible pricing, transparency about where materials go, real photography) and avoided what hurts them (audience overload, hidden prices, template aesthetics, overpromised rewards).
 
