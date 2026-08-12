@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Circular Express Box | Recycling Program in a Box</title>
-  <meta name="description" content="Fill it with bottles, cans, paper, and more. Ship it free with FedEx. Track every pound and earn rewards for recycling right.">
+  <meta name="description" content="Fill it with bottles, cans, paper, and more. Ship it back with prepaid FedEx. Track every pound and earn rewards for recycling right.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -70,7 +70,7 @@
         <div class="hero-content reveal">
           <p class="eyebrow">A GEARED FOR GREEN COMPANY</p>
           <h1 id="hero-heading">A recycling program in a box.</h1>
-          <p class="hero-sub">Fill it with bottles, cans, paper, and more. Ship it free with FedEx. Track every pound and earn rewards for recycling right. Have a different material? We will build a stream for it.</p>
+          <p class="hero-sub">Fill it with bottles, cans, paper, and more. Ship it back with prepaid FedEx. Track every pound and earn rewards for recycling right. Have a different material? We will build a stream for it.</p>
           <div class="hero-buttons">
             <a href="#pricing" class="btn btn-primary">Get Your Box - from $99</a>
             <a href="#brands" class="btn btn-secondary">For Brands &amp; Organizations</a>
@@ -83,13 +83,23 @@
         </div>
         <div class="hero-visual reveal">
           <div class="hero-circle" aria-hidden="true"></div>
-          <div class="photo-card">
+          <div class="photo-card photo-swap" id="hero-swap">
             <img
               src="assets/photo-bottle-drop.png"
               alt="Dropping a plastic bottle into a Circular Express Box"
               width="1920"
               height="1080"
-              class="photo-card-img"
+              class="photo-card-img photo-swap-img is-active"
+              data-swap-label="Plastic bottles"
+            >
+            <img
+              src="assets/photo-vinyl-drop.png"
+              alt=""
+              aria-hidden="true"
+              width="1920"
+              height="1080"
+              class="photo-card-img photo-swap-img"
+              data-swap-label="Vinyl records"
             >
             <span class="photo-overlay-chip">Real box. Real recycling.</span>
           </div>
@@ -138,7 +148,7 @@
           </article>
           <article class="step-card reveal">
             <span class="step-number" aria-hidden="true">3</span>
-            <h3>Ship it free</h3>
+            <h3>Ship it prepaid</h3>
             <p>Log in, print your prepaid FedEx label, and drop the sealed box at any FedEx location, or hand it to your regular driver.</p>
             <span class="badge-chip">Prepaid FedEx label</span>
           </article>
