@@ -160,7 +160,7 @@ Two-column: left = `photo-vinyl-drop.png` in rounded card (this photo is the sta
 - Eyebrow (green-100): "FOR BRANDS & ORGANIZATIONS"
 - H2 white: "Launch a branded take-back program."
 - Body (white/85%): "Every Circular Express Box carries a sponsor panel and a dedicated material sticker. That means your brand can run a national take-back program without building any infrastructure: put co-branded boxes anywhere FedEx ships, and we handle collection, processing, and the impact report."
-- Checklist (green-100 checks, white text): "Co-branded boxes with your logo on the sponsor panel" / "Custom material streams, from vinyl records to event waste" / "Nationwide collection through FedEx" / "Campaign-level impact reporting for ESG and PR"
+- Checklist (green-100 checks, white text): "Co-branded boxes with your logo on the sponsor panel" / "Custom material streams, from vinyl records to event waste" / "Custom-printed box sleeves that carry your full design in stores and at events" / "Nationwide collection through FedEx" / "Campaign-level impact reporting for ESG and PR"
 - Quote-style line (italic, white/70%, 15px): "Currently piloting record take-back with the music industry."
 - Button (white bg, green-900 text): "Build your program" → mailto:jeff@gearedforgreen.com?subject=Circular%20Express%20Box%20Brand%20Program
 ### 11b. BEACH CLEANUPS (white bg) — id="cleanups" (nav + mobile menu + footer link "Cleanups")
