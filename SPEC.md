@@ -90,7 +90,7 @@ Footnote line under grid (13px, ink-soft, centered): "Not sure about an item? Ch
 ### 7. WHERE IT GOES / CLOSED LOOP (green-900 bg, white text) — id="impact"
 Header: eyebrow (green-100 color) "WHERE IT GOES"; H2 white: "Watch your recycling become the good stuff."
 Journey row: 4 nodes with arrows (CSS only, no images): "Your box" → "Regional recycling hub" → "Sustainable raw material" → "New products"
-Below, highlight card (white bg, ink text, radius-lg, max 720px centered): H3 "6 bottles = 1 hat." Body: "Materials from Circular Express Boxes are processed and remade into real products, like Champions for GREEN hats made from 6 recycled bottles each, with the count stamped on every piece. That is the loop, closed."
+Below, highlight card (white bg, ink text, radius-lg, max 720px centered): H3 "6 bottles = 1 hat." Body: "Materials from Circular Express Boxes are processed and remade into real products, like Champions for GREEN hats made from 6 recycled bottles each, with the count stamped on every piece. That is the circular economy, working: the loop, closed."
 Under the card, stat row (3 stats, white text, Bricolage 700 numbers 36px): "1.7B+ lbs recycled by our family of companies" / "950M+ lbs reintegrated into new products" / "Since 1985"
 
 ### 8. REWARDS (cream bg) — id="rewards"
@@ -104,7 +104,7 @@ Right visual: a stylized reward ticket stack (3 stacked cards, white bg, kraft b
 
 ### 9. DASHBOARD / FOR ORGANIZATIONS PROOF (white bg)
 Header: eyebrow "TRACK EVERYTHING"; H2: "Impact you can put in a report."
-Sub: "Every box is tracked. Your dashboard turns shipments into the numbers your team, your members, and your ESG report actually need."
+Sub: "Every box is tracked. Your dashboard turns shipments into the numbers your team, your members, and your ESG report actually need. Multi-location programs also get a live leaderboard, so every site can see where it ranks."
 
 Tabbed browser-window frame (existing dash-window + dash-chrome stay EXACTLY as built: white window, radius-lg, shadow-card, 1px kraft-deep border, max-width 980px, chrome bar with traffic dots + URL pill "dashboard.circularexpressbox.com"). Two tabs (existing .dash-tabs/.dash-tab styles and the generic JS switcher in main.js stay):
 - Tab 1 (default active): id dash-tab-cleanup, controls dash-pane-cleanup, label "Miami Waterkeeper · Beach Cleanups"
@@ -160,7 +160,7 @@ Two-column: left = `photo-vinyl-drop.png` in rounded card (this photo is the sta
 - Eyebrow (green-100): "FOR BRANDS & ORGANIZATIONS"
 - H2 white: "Launch a branded take-back program."
 - Body (white/85%): "Every Circular Express Box carries a sponsor panel and a dedicated material sticker. That means your brand can run a national take-back program without building any infrastructure: put co-branded boxes anywhere FedEx ships, and we handle collection, processing, and the impact report."
-- Checklist (green-100 checks, white text): "Co-branded boxes with your logo on the sponsor panel" / "Custom material streams, from vinyl records to event waste" / "Custom-printed box sleeves that carry your full design in stores and at events" / "Nationwide collection through FedEx" / "Campaign-level impact reporting for ESG and PR"
+- Checklist (green-100 checks, white text): "Co-branded boxes with your logo on the sponsor panel" / "Custom material streams, from vinyl records to event waste" / "Custom-printed box sleeves that carry your full design in stores and at events" / "Nationwide collection through FedEx" / "Location leaderboards that get every store and site competing on pounds recycled, with monthly winners" / "Engagement data by location: consumer sign-ups, reward redemptions, and repeat participation" / "Campaign-level impact reporting for ESG and PR"
 - Quote-style line (italic, white/70%, 15px): "Currently piloting record take-back with the music industry."
 - Button (white bg, green-900 text): "Build your program" → mailto:jeff@gearedforgreen.com?subject=Circular%20Express%20Box%20Brand%20Program
 ### 11b. BEACH CLEANUPS (white bg) — id="cleanups" (nav + mobile menu + footer link "Cleanups")
@@ -181,7 +181,7 @@ Accordion (plain JS, one open at a time, chevron rotates, smooth height transiti
 3. "Where does my recycling actually go?" → "Boxes ship to regional recycling hubs where materials are sorted and processed into sustainable raw materials, then remade into real products like recycled-fabric apparel. Your dashboard tracks every shipment."
 4. "How do rewards work?" → "Each received shipment earns points in your account. Redeem points for discounts on sustainable products from our family of brands."
 5. "Can my company or organization use this?" → "Yes. Gyms, offices, campuses, events, and community groups run Circular Express Box programs today. For co-branded boxes and custom material streams, see For Brands & Organizations above."
-6. "How big is the box?" → "The standard Circular Express Box is a heavy-duty, tamper-friendly collection box sized for high-traffic spots like lobbies, gyms, and cafes, and it ships flat with liners included."
+6. "How big is the box?" → "The standard Circular Express Box measures 15 x 15 x 34.5 inches, a heavy-duty double-wall box sized for high-traffic spots like lobbies, gyms, and cafes. It ships flat with liners included and sets up in about a minute."
 
 ### 14. FINAL CTA (green-700 bg)
 Centered, white: H2 (Bricolage 700, 36→48px): "Your recycling deserves a better ending."
@@ -207,3 +207,12 @@ Bottom bar, centered, white/50%: "© 2026 Circular Express Box. A Geared for GRE
 - Lighthouse-style sanity: single CSS file, no console errors, images have width/height or aspect-ratio to prevent layout shift.
 - Looks premium at first glance: generous whitespace, consistent radii, one shadow style, no more than the specified colors.
 - Validate: every href present and correct per spec; no "#" dead links besides listed anchors; no developer credits anywhere.
+
+
+## ADDENDUM (2026-08-12): Andrew copy update + legal pages
+- Physical box spec (from die-line GEAREDFORGREEN Circular Express Box Design, CAD 230571_1DP.ARD): 15 x 15 x 34.5 in, ECT 48 double-wall kraft, 1-color green print, blank sheet 61.25 x 63 in. Box art includes a "Scan to get Shipping Label" QR panel and "Or order your shipping label here circularexpressbox.com".
+- FAQ now has 8 items: added Q7 "Is there a weight limit?" (15 to 30 lbs typical, contact us over 50) and Q8 "Where do you ship?" (all 50 states, AK/HI slower but prepaid).
+- For Brands body gained: "Consumers join your rewards program through the box, so every box becomes an engagement channel for your brand, not just a bin. It is circular economy infrastructure, rented by the campaign."
+- Dashboard gym tab gained a second pill: "Rank #2 of 8 locations".
+- Footer: about line adds "Building the circular economy one box at a time."; new Legal column (Privacy Policy, Terms of Service); Instagram + LinkedIn icons (G4G handles until CEB accounts exist); bottom bar repeats the legal links.
+- NEW PAGES: privacy.html and terms.html. Same nav/footer/CSS as index; nav links point to index.html#anchors. Plain-language content; both carry the line "This page is provided for information. Contact jeff@gearedforgreen.com with any questions." Counsel review pending before public launch.

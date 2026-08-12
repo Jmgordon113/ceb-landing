@@ -26,8 +26,9 @@ Because collection rides on FedEx instead of trucks and routes, CEB works anywhe
   | For Brands | The co-branded take-back pitch and the direct line to our COO |
   | Cleanups | Community cleanup programs and box requests for events |
   | Testimonials | Real customers in their own words |
-  | FAQ | The six questions that stop a purchase, answered straight |
-  | Footer | Contacts, account login, and who owns the company |
+  | FAQ | The eight questions that stop a purchase, answered straight |
+  | Footer | Contacts, account login, legal links, socials, and who owns the company |
+  | Privacy Policy / Terms | Two standalone legal pages linked from the footer |
 
 ## The website in 60 seconds: "How do I...?"
 
@@ -63,14 +64,14 @@ Menu → **Pricing** → most facilities take the highlighted **3-Box Pack** (on
 
 ### Brands and organizations: co-branded take-back programs
 
-The partnership tier. Every physical box has two built-in slots: a commodity sticker (what stream this box collects) and a "Supported by" sponsor panel (whose program this is). That means a brand can launch a **national take-back program without building anything**: CEB prints boxes carrying the brand's logo and a custom material stream, say, vinyl records, places them in stores, at events, or ships them to fans, and FedEx brings every box back. CEB handles processing and delivers campaign-level impact reporting for ESG and PR. For retail placements, boxes can also wear custom-printed stretch sleeves, sublimated edge to edge with the partner’s design, so the box on the floor looks like the brand’s own fixture. Community programs work the same way, like the Miami Waterkeeper beach cleanups. Vinyl records are the newest custom stream, currently piloting with the music industry.
+The partnership tier. Every physical box has two built-in slots: a commodity sticker (what stream this box collects) and a "Supported by" sponsor panel (whose program this is). That means a brand can launch a **national take-back program without building anything**: CEB prints boxes carrying the brand's logo and a custom material stream, say, vinyl records, places them in stores, at events, or ships them to fans, and FedEx brings every box back. CEB handles processing and delivers campaign-level impact reporting for ESG and PR. For retail placements, boxes can also wear custom-printed stretch sleeves, sublimated edge to edge with the partner’s design, so the box on the floor looks like the brand’s own fixture. Because consumers join the rewards program through the box, each box doubles as an engagement channel: brands get sign-ups, redemptions, and repeat participation by location, plus leaderboards that turn stores into friendly competition with monthly winners. Community programs work the same way, like the Miami Waterkeeper beach cleanups. Vinyl records are the newest custom stream, currently piloting with the music industry.
 
 > **On the website:**
 Menu → **For Brands** (or the **For Brands & Organizations** button on the opening screen) → read the program checklist → click **Build your program**, which opens a pre-addressed email to Jeff Feldman, COO. Community groups: menu → **Cleanups** → **Request cleanup boxes**.
 
 ## How the box works, start to finish
 
-  - **Order.** Choose Single, 3-Pack, or 10-Pack. Boxes ship flat to your door and set up in about a minute. Every box includes liners, its material sticker, and a prepaid FedEx return label tied to your account.
+  - **Order.** Choose Single, 3-Pack, or 10-Pack. Each box measures 15 x 15 x 34.5 inches in heavy-duty double-wall kraft, ships flat to your door, and sets up in about a minute. Every box includes liners, its material sticker, and a prepaid FedEx return label tied to your account.
   - **Fill.** Toss in the accepted materials for that box's stream as you go. One box, one stream, that is what keeps the material clean enough to be worth recycling.
   - **Ship.** Seal the full box, log in and print the prepaid label, and either drop it at any FedEx location or hand it to the FedEx driver already visiting your building. Shipping costs nothing extra; it is included in the box price.
   - **Processing.** The box arrives at a regional recycling hub, where the material is weighed, recorded to your account, and processed into sustainable raw material.
@@ -120,14 +121,14 @@ Menu → **Rewards** shows the current redemption examples. Your actual point ba
 
 ## How tracking and reporting work
 
-Every box is tied to an account, and every shipment is weighed on receipt. From that single stream of data: individuals see lifetime pounds diverted and points earned; facilities see per-location totals for members and ESG reports (boxes shipped, pounds by material, CO2e avoided, and what the material became); brand programs get campaign-level rollups packaged as a publishable sustainability report.
+Every box is tied to an account, and every shipment is weighed on receipt. From that single stream of data: individuals see lifetime pounds diverted and points earned; facilities see per-location totals for members and ESG reports (boxes shipped, pounds by material, CO2e avoided, and what the material became); brand programs get campaign-level rollups, a live leaderboard ranking every site by pounds recycled, and a publishable sustainability report.
 
 > **On the website:**
 Scroll to the **dashboard window** (under "Impact you can put in a report"). It is a working preview with two clickable tabs: **Miami Waterkeeper · Beach Cleanups** shows a real cleanup-season report, and **Gym & Studio Program** shows a facility view with points earned. Your own live numbers are behind **Log In**. Brand partners receive the full report as a deliverable, in the same format as the Waterkeeper example.
 
 ## Getting help
 
-Six questions cover most of what people ask: how shipping works, what goes in, where materials actually go, how rewards work, organizational use, and box size.
+Eight questions cover most of what people ask: how shipping works, what goes in, where materials actually go, how rewards work, organizational use, box size, weight limits, and where we ship.
 
 > **On the website:**
 Menu → **FAQ**: click any question to expand its answer. Anything else: the footer lists Jeff Feldman, COO (jeff@gearedforgreen.com) and Jake Gordon, Client Services (jakeg@gearedforgreen.com), or use **Talk to us** at the bottom of the page.
@@ -157,7 +158,7 @@ Two decisions drive everything: the dashboard lives in the profile because impac
 
 ## What the website handles today vs. next phase
 
-  - **On the new site now:** the full story, open pricing, program previews, and routing: buying hands off to the existing secure checkout, and **Log In** opens the existing customer platform where label printing already works. Nothing a customer relies on is broken during the transition.
+  - **On the new site now:** the full story, open pricing, program previews, and routing: buying hands off to the existing secure checkout, and **Log In** opens the existing customer platform where label printing already works. Nothing a customer relies on is broken during the transition. Privacy Policy and Terms of Service pages are live and linked in the footer; both are plain-language drafts built from company facts and should be reviewed by counsel before the public launch.
   - **Next phase (scoped, not yet built):** native accounts, label downloads, and checkout on the new platform, so the old system can be fully retired. Planned order: member area with label downloads first, integrated checkout second, fully automated FedEx label generation last.
 
 ## Quick reference
