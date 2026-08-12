@@ -13,7 +13,14 @@ You are deploying the new Circular Express Box website to circularexpressbox.com
 circularexpressbox.com currently runs a WordPress/WooCommerce site. Its DESIGN is being replaced, but three functions on it are LIVE and REVENUE-CRITICAL and must keep working during and after this deployment:
 1. Checkout: /product/single-box/ ($99), /product/three-boxes/ ($269), /product/ten-boxes/ ($749)
 2. Customer login/accounts
-3. Prepaid FedEx shipping label download for logged-in customers (this is the core thing existing customers do; breaking it means customers cannot ship their boxes)
+3. Prepaid FedEx shipping label GENERATION and download for logged-in customers (this is the core thing existing customers do; breaking it means customers cannot ship their boxes)
+
+## CRITICAL: PRESERVE THE SHIPPING LABEL SYSTEM
+The single most important constraint of this deployment. The current platform GENERATES prepaid FedEx shipping labels and serves them to logged-in customers. That entire pipeline must work identically after the migration:
+- BEFORE changing anything, identify exactly how labels are produced today: which plugin or integration generates them, whether an admin creates/uploads them, and where customers retrieve them. Document it.
+- Whatever that mechanism is (plugins, FedEx integrations, API credentials, admin workflows, scheduled jobs), it must be preserved fully intact. If WordPress moves to a subdomain, the complete label system moves with it and keeps working, both the admin side that creates labels and the customer side that retrieves them.
+- Do not deactivate, update, or replace any plugin involved in label generation as part of this deployment.
+- After migration, test END TO END: generate a NEW label through the normal workflow and confirm a customer account can retrieve and print it. Viewing a previously existing label is not sufficient proof.
 
 ## THE JOB
 Make circularexpressbox.com serve the new static site as its homepage, while checkout and customer accounts keep working. Choose the approach based on the hosting access available:
@@ -41,7 +48,7 @@ Make circularexpressbox.com serve the new static site as its homepage, while che
 1. circularexpressbox.com renders identical to https://jmgordon113.github.io/ceb-landing/ on desktop (1280px) and phone (375px), no horizontal scroll, no console errors.
 2. All six menu links scroll to their sections; the dashboard window's two tabs switch when clicked; the FAQ accordion opens and closes.
 3. Each of the three pricing buttons lands on the correct, working checkout page and a test add-to-cart works.
-4. Log In reaches the real customer login, and a real customer account can still download its shipping label.
+4. Log In reaches the real customer login, AND the label system works end to end post-migration: a NEW shipping label can be generated through the normal admin/customer workflow, and a customer account can retrieve and print it. Confirm the admin side of label creation works exactly as it did before.
 5. The "Build your program" button opens an email draft to jeff@gearedforgreen.com.
 6. https (SSL) works on every URL involved, including any new subdomain.
 7. Old indexed URLs redirect sensibly (no 404s from Google results).
