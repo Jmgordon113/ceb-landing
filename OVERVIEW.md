@@ -9,6 +9,26 @@
 Circular Express Box is a recycling program in a box. A customer buys a box, fills it with one clean stream of recyclables, and ships it back with the prepaid FedEx label that comes with every box. The material goes to a regional recycling hub, gets processed into sustainable raw material, and re-enters the world as real products through the Geared for GREEN family (apparel, furniture, building products). Every shipment is weighed and tracked, so customers see exactly what they diverted, and every shipment earns rewards points.
 Because collection rides on FedEx instead of trucks and routes, CEB works anywhere in the United States, for a single household or a hundred locations, with zero new infrastructure.
 
+## Site index: every section in one line
+
+  | Section | What it does |
+|---|---|
+  | Top bar | Current announcements: vinyl records accepted, nationwide FedEx shipping |
+  | Menu | Jumps to every section; Log In and Get Your Box always available |
+  | Opening screen | What CEB is in one line, with the two paths: buy a box or start a brand program |
+  | Trusted by | The real teams and communities already using CEB |
+  | How It Works | The 4-step process: get, fill, ship, earn |
+  | What Goes In | Accepted materials, custom streams, and what to keep out |
+  | Where It Goes | Proof the loop closes: box → hub → raw material → new products |
+  | Rewards | What points earn, with live redemption examples |
+  | Dashboard window | Clickable preview of client reporting (cleanup and gym examples) |
+  | Pricing | The three packs with prices in the open; buttons go to checkout |
+  | For Brands | The co-branded take-back pitch and the direct line to our COO |
+  | Cleanups | Community cleanup programs and box requests for events |
+  | Testimonials | Real customers in their own words |
+  | FAQ | The six questions that stop a purchase, answered straight |
+  | Footer | Contacts, account login, and who owns the company |
+
 ## The website in 60 seconds: "How do I...?"
 
 The website is one continuous page. The menu at the top (How It Works, What Goes In, Rewards, Pricing, For Brands, Cleanups, FAQ) jumps you to each part, and the green **Get Your Box** button is always visible in the top-right corner. Every common task, and where to do it:
@@ -111,6 +131,29 @@ Six questions cover most of what people ask: how shipping works, what goes in, w
 
 > **On the website:**
 Menu → **FAQ**: click any question to expand its answer. Anything else: the footer lists Jeff Feldman, COO (jeff@gearedforgreen.com) and Jake Gordon, Client Services (jakeg@gearedforgreen.com), or use **Talk to us** at the bottom of the page.
+
+## The client dashboard & profile: what members will see
+
+This is the next phase of the platform (designed, not yet built). The guiding idea: when a client logs in, their profile page IS their organization's dashboard. No digging through menus, the first screen is their own impact, in the same report format shown on the website.
+
+### What a logged-in client sees
+
+  - **Their impact dashboard, front and center.** The organization's live numbers: pounds diverted, bottles and cans counted, CO2e avoided, and what their material became. Same format as the Miami Waterkeeper report on the site, but with their name and their real totals, updating with every received shipment.
+  - **My Boxes.** Every box they own with its status: in use, label printed, in transit, received. Each box has its **Download Shipping Label** button right there, the single most-used feature moves from buried to one click.
+  - **Reorder in one click.** An **Order Again** button repeats their last pack without re-entering anything. And the account watches itself: when the last prepaid label is used, the profile flags "You're out of boxes" with the reorder button attached. (Later: optional auto-replenish, a fresh pack ships automatically each quarter.)
+  - **Points & rewards.** Current balance, how it was earned, and redemption in the same place, including pooling for team gear.
+  - **Shipment history.** Every shipment with date, material, weight, and points, the audit trail behind the dashboard numbers.
+  - **Downloadable reports.** A season or annual sustainability report generated from their data, in the branded report format, ready to hand to members, boards, or ESG reviewers. For business clients this is the deliverable that justifies the program.
+
+### What the profile page is for
+
+  - **Organization identity:** company or organization name, logo, and locations, and their logo flows onto their dashboard and reports automatically, so every report is co-branded without design work.
+  - **Practical account details:** shipping address for reorders, contact people, email preferences.
+  - **For multi-location clients (later):** per-location boxes and totals under one organization, with team members invited to the same account.
+
+### Why this design
+
+Two decisions drive everything: the dashboard lives in the profile because impact is what clients come back to look at, and reorder lives in the profile because the moment they feel that impact is the moment they buy the next pack. Look at your numbers, click Order Again, done, the loop feeds itself.
 
 ## What the website handles today vs. next phase
 
